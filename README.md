@@ -1,6 +1,5 @@
 # MySQL Italian Recipes Database
-Progetto realizzato per il corso universitario di Basi di Dati. DBMS: MySQL.
-
+DBMS: MySQL.
 Il file Massimo_Belfiore_X81001087_relazioneprogetto.pdf contiene la documentazione dettagliata del progetto.
 
 
