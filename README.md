@@ -19,7 +19,7 @@ Il Database realizzato è stato ottimizzato tramite l'aggiunta di indici. Il dat
     relazioni tra entità tramite chiavi primarie ed esterne
     ecc...
 
-Contenuto degli script
+**Contenuto degli script**
 
 «» Lo script db_ricette.sql contiene il codice per creare il database.
 
@@ -30,7 +30,7 @@ Contenuto degli script
 «» Lo script homepage_piattaforma_ricette.php contiene il codice per visualizzare sul Web Browser dell'utente la ricetta del giorno.
 Utilizzare il Database
 
-Istruzioni:
+**Istruzioni:**
 
     Apri phpMyAdmin o MySQL Workbench.
     Crea un nuovo database, ad esempio:
@@ -60,7 +60,7 @@ Alternativamente è possibile utilizzare MySQL CLI prima installandolo sulla pro
 
     GRANT ALL ON db_piattaforma_ricette.* TO 'duser'@'localhost';
 
-Esempio di query:
+**Esempio di query:**
 
 #Ricerca di una ricetta in base agli ingredienti
 
