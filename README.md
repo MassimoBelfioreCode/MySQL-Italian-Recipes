@@ -1,2 +1,71 @@
-# DB_piattaforma_ricette
-DB relazionale piattaforma di condivisione di ricette e gestione delle recensioni. DBMS MySQL. Progetto per il corso universitario di Basi di Dati.
+MySQL Italian Recipes Database
+
+DBMS: MySQL. Il file Massimo_Belfiore_X81001087_relazioneprogetto.pdf contiene la documentazione dettagliata del progetto.
+
+Questo progetto consiste nella progettazione e quindi realizzazione del database relazionale per una piattaforma di ricette di cucina italiana e gestione delle recensioni. Include la progettazione, la creazione delle tabelle, il popolamento dei dati, una serie di query SQL dimostrative e uno script php che mostra la ricetta del giorno.
+
+Tecnologie utilizzate
+
+    MySQL (DBMS)
+    phpMyAdmin per la gestione del database
+    MySQL Workbench per la progettazione e il diagramma ER
+    Apache + PHP come ambiente server locale
+    SQL (DDL + DML) per la definizione e manipolazione dei dati
+
+Il Database realizzato è stato ottimizzato tramite l'aggiunta di indici. Il database permette di effettuare operazioni di DML e DLL, quindi supporta tutte le principali operazioni SQL:
+
+    creazione e gestione tabelle (DDL)
+    inserimento, modifica e cancellazione dati (DML)
+    relazioni tra entità tramite chiavi primarie ed esterne
+    ecc...
+
+Contenuto degli script
+
+«» Lo script db_ricette.sql contiene il codice per creare il database.
+
+«» Lo script operazioni.sql contiene l’implementazione in SQL delle operazioni previste.
+
+«» Lo script trigger.sql contiene dei trigger.
+
+«» Lo script homepage_piattaforma_ricette.php contiene il codice per visualizzare sul Web Browser dell'utente la ricetta del giorno.
+Utilizzare il Database
+
+Istruzioni:
+
+    Apri phpMyAdmin o MySQL Workbench.
+    Crea un nuovo database, ad esempio:
+
+    CREATE DATABASE piattaforma_ricette;
+
+    Importa il file ricette.sql.
+    Esegui le query dimostrative presenti in operazioni.sql.
+
+Alternativamente è possibile utilizzare MySQL CLI prima installandolo sulla propria macchina e successivamente creando un utente. --> Istruzioni su come configurare un database MySQL utilizzando la shell mysql:
+
+    Avviate mysql dalla riga di comando della shell:
+
+    mysql -u root -p
+
+    Inserisci Password: metti la password
+
+    Create un nuovo utente per il database("nome database") e la relativa password("nome password")
+
+    CREATE USER 'duser'@'localhost' IDENTIFIED BY 'nome password';
+
+    Create un nuovo database per il progetto("db_piattaforma_ricette"):
+
+    CREATE DATABASE db_piattaforma_ricette;
+
+    Adesso potete concedere sostanzialmente al nuovo utente che avete creato i diritti di accesso al nuovo database con:
+
+    GRANT ALL ON db_piattaforma_ricette.* TO 'duser'@'localhost';
+
+Esempio di query:
+
+#Ricerca di una ricetta in base agli ingredienti
+
+SELECT R.id_ricetta, R.titolo, R.id_categoria, R.numero_recensioni, R.dosi_per, R.preparazione, R.senza_glutine, R.senza_lattosio, R.gourmet, R.media_apprezzamento
+
+FROM ricetta R, contiene C, ingrediente I
+
+WHERE R.id_ricetta = C.id_ricetta AND C.id_ingrediente = I.id_ingrediente AND I.nome = "Spaghetti" AND C.quantita < "350g"
