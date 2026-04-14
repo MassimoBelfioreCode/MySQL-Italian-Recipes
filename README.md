@@ -29,9 +29,9 @@ Il Database realizzato è stato ottimizzato tramite l'aggiunta di indici. Il dat
 
 «» Lo script homepage_piattaforma_ricette.php contiene il codice per visualizzare sul Web Browser dell'utente la ricetta del giorno.
 
-Utilizzare il Database
+**Utilizzare il Database**
 
-**Istruzioni:**
+Istruzioni:
 
     Apri phpMyAdmin o MySQL Workbench.
     Crea un nuovo database, ad esempio:
