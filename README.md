@@ -1,6 +1,6 @@
 **MySQL Italian Recipes Database**
 
-DBMS: MySQL. Il file Massimo_Belfiore_X81001087_relazioneprogetto.pdf contiene la documentazione dettagliata (36 pagine) del progetto.
+DBMS: MySQL. Il file Massimo_Belfiore_X81001087_relazioneprogetto.pdf contiene la documentazione dettagliata del progetto.
 
 Questo progetto consiste nella progettazione e quindi realizzazione del database relazionale per una piattaforma di ricette di cucina italiana e gestione delle recensioni. Include la progettazione, la creazione delle tabelle, il popolamento dei dati, una serie di query SQL dimostrative e uno script php che mostra la ricetta del giorno.
 
