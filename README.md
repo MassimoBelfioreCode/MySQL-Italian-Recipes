@@ -265,3 +265,7 @@ PUBLIC "-//W3C//DTD SVG 1.1//EN"
    <rect width="138" height="20" x="368" y="482" style="fill:none;stroke:black;"/>
    <text width="138" height="20" x="373" y="496" style="fill:black;" font-family="Arial" font-size="16px">id_utente</text>
 </svg>
+
+
+
+<img width="1106" height="773" alt="fisico_modello_schema" src="https://github.com/user-attachments/assets/0e5dc62d-b255-43e9-9fa6-e5dec42e08e5" />
